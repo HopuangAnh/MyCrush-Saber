@@ -1,0 +1,575 @@
+/* Fomrt CSS */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* comomt */
+.clear {
+    clear: both;
+}
+
+.text-all {
+    color: white !important;
+}
+
+
+
+/* main */
+
+#main {
+
+}
+
+#header {
+    
+    height: 54px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.header-low {
+    height: 54px;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav .subnav {
+    display: none;
+    min-width: 160px;
+    list-style-type: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+}
+
+#nav .subnav a {
+    color: black;
+    padding: 0px  60px;
+    line-height: 38px;
+}
+
+#nav > li > a {
+    color: cornsilk;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    display: block;
+    text-decoration: none;
+    line-height: 54px;
+    padding: 0px 40px;
+}
+
+#nav li:hover .subnav {
+    display: inline-block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+    color: black;
+    background-color: burlywood;
+}
+
+#nav .nav-arrow {
+    font-size: 12px;
+}
+
+#header .search-button {
+    color: white;
+    float: right;
+    line-height: 54px;
+    padding: 0 27px;
+}
+
+#header .search-button:hover {
+    cursor: pointer;
+    color:rgb(255, 248, 220);
+    background-color: tomato;
+}
+
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    float: right;
+    line-height: 54px;
+    padding: 0 27px;
+    display: none;
+}
+
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+}
+
+#slider {
+    height: 250px;
+    position: relative;
+    padding: 23%;
+    background: url('/assets/img/nen1.png') top center / cover no-repeat;
+}
+
+#slider .text-content {
+    position: absolute;
+    color: rgb(211, 255, 255);
+    bottom: 20px;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+    
+}
+
+#slider .text-h2 {
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+
+#slider .text-div {
+    font-style: italic;
+    margin-top: 25px;
+    opacity: 0.7;
+}
+
+
+#content {
+    
+    box-sizing: border-box;
+}
+
+#content .background-content {
+    width: 100%;
+    background: url(/assets/img/nen2.jpg) top center / cover no-repeat;
+}
+
+#content .content-selection {
+    width: 100%;
+
+}
+
+.content-infomation {
+    margin: 0 16px;
+}
+
+#content .selection-heading {
+    
+    padding-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+#content .content-thestory {
+    padding-top: 45px;
+    padding-bottom: 50px;
+    width: 800px;
+    max-width: 100%;
+    margin: auto;
+}
+
+#content .selection-sub-heading {
+    font-style: italic;
+    opacity: 0.8;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+#content .selection-heading,
+#content .selection-sub-heading {
+    text-align: center;
+
+}
+
+#content .about-text {
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#content .about-member {
+    height: 400px;
+}
+
+#content .member {
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#content .member-name {
+    font-weight: 600;
+    margin: 15px 0px;
+}
+
+#content .member-img {
+    width: 230px;
+    max-width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.content-mainvotes {
+    width: 100%;
+    background: url("/assets/img/nen3.jpg") top center / cover no-repeat; 
+}
+
+
+#content .content-voted {
+    box-sizing: border-box;
+    
+}
+
+.votes-none {
+    width: 100%;
+    height: 52px;
+}
+
+.amout-votes {
+    border: 1px solid;
+    color: #757575;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    
+}
+
+.votesmain {
+    padding-top: 54px;
+    width: 800px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.amout-votes li {
+    padding: 8px 16px;
+    border-bottom: 1px solid;
+    list-style: none;
+}
+
+.amout-votes .votes {
+    color: #fff !important;
+    background-color: #f44336;
+    display: inline-block;
+    padding: 1px 10px;
+    border-radius: 10%;
+    margin-left: 20px;
+}
+
+.amout-votes .no-votes {
+    color: #fff;
+    background-color: black;
+    text-align: center;
+    float: right;
+    padding: 1px 10px;
+    border-radius: 10%;
+}
+
+#content .place-list {
+    margin-left: -10px;
+    margin-right: -10px;
+
+}
+
+.place-list .place-item {
+    float: left;
+    width: 33.33333%;
+    padding: 0px 10px;
+    margin-bottom: 70px;
+
+}
+
+.place-list .place-img {
+    width: 100%;
+    height: 144px;
+    display: block;
+    border: 1px solid black;
+
+}
+
+.place-list .place-event {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.place-event {
+    padding: 20px 20px;
+}
+
+.place-heading {
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+.place-sub-heading {
+    padding-bottom: 20px;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+.place-content {
+    
+    padding-bottom: 10px;
+    
+}
+
+.place-btn {
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    padding: 5px 20%;
+
+}
+
+.place-list .place-btn:hover {
+    color: #757575;
+    background-color: bisque;
+}
+
+#content .contact {
+    padding-top: 54px;
+    display: block;
+    background-color: black;
+    height: 375px;
+
+}
+
+.contact-padding {
+    width: 800px;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-padding .contact-maill {
+    width: 50%;
+    font-size: 18px;
+    letter-spacing: 1.4px;
+    color: white;
+    float: left;
+}
+
+.contact-maill-ifnomation {
+    
+}
+
+.contact-maill .icon-maill {
+    padding-right: 10px;
+    line-height: 1.5;
+}
+
+.contact-all-message {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.message-note {
+    
+}
+
+.message-Namemaill {
+    
+}
+
+.message-infoname {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.message-infomaill{
+    margin-left: 10px;
+}
+
+.contact-all-message .message-name {
+    float: left;
+    
+}
+
+.contact-all-message .message-maill {
+    float: right;
+}
+
+.contact-all-message .message-name ,
+.contact-all-message .message-maill {
+    width: 50%;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.contact-all-message .message-believe {
+    
+}
+
+.contact-all-message .message {
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px 15px 5px 5px;
+    font-size: 15px;
+}
+
+.contact-all-message .message-button {
+    float: right;
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 8px;
+    border: 1px solid white;
+    color: white;
+    background-color: black;
+    
+    
+}
+
+#footer .background-contact{
+}
+
+#footer .footer-background{
+    display: block;
+    width: 100%;
+}
+
+#footer .social-list {
+    background-color: #757575;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+
+
+#footer .social-list a {
+    color: black;
+    text-decoration: none;
+}
+
+#footer .social-list a:hover {
+    opacity: 0.6;
+}
+
+#footer .Ending {
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center; 
+    padding: 20px;   
+    letter-spacing: 1.4px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .s-col-full {
+        float: initial !important;
+        width: initial !important;
+    }
+
+    #main {
+        width: 821px;
+        max-width: 100%;
+    }
+
+    #header {
+
+        overflow: hidden;
+
+    }
+
+    #nav {
+        display: block;
+    }
+
+    #nav .subnav {
+        width: 100%;
+        position: initial;
+        box-shadow: initial;
+        background-color: #000;
+    }
+
+    #nav .subnav a {
+        width: 100%;
+        text-transform: uppercase;
+        color: #fff;
+
+    }
+
+    #nav > li {
+        display: block;
+    }
+    
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+    .search-button {
+        display: none;
+    }
+
+    #header .mobile-menu-btn {
+        display: block;
+    }
+
+    #content .about-member {
+        height: 100%;
+    }
+
+    #content .member {
+        float: initial;
+        width: 100%;
+    }
+
+    #content .member-img {
+        width: 65%;
+    }
+
+    .votesmain {
+        margin: 0 16px;
+        width: initial;
+    }
+
+    .place-btn {
+    }
+
+    .place-list .place-item {
+        float: initial;
+        width: 100%;
+    }
+
+    .place-list .place-img {
+        height: initial;
+    }
+
+    #content .contact {
+        height: 450px;
+    }
+
+    .contact-padding {
+        padding: 0 16px;
+    }
+
+    .message-button {
+        float: initial;
+        width: 100%;
+        padding-bottom: 16px;
+    }
+}
